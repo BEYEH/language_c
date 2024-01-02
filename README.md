@@ -27,3 +27,23 @@
 - & 不要都念成 and，涉及指標操作的時候，要讀為 "address of" 。
 - 為何 C 語言標準函式庫裡頭的函式名稱如此簡短？
   - Translation limits 6 significant initial characters in an external identifier. (最初連結器有 6 到 8 個字元的輸入限制。)
+- 在 C 語言的物件就指在執行時期，資料儲存的區域，可以明確表示數值的內容。
+- 沒有「雙指標」只有「指標的指標」。
+- C 語言中，萬物皆是數值 (everything is a value)，函式呼叫當然只有 call-by-value。「指標的指標」(英文就是 a pointer of a pointer) 是個常見用來改變「傳入變數原始數值」的技巧。
+- Array, function, and pointer types are collectively called derived declarator types. A declarator type derivation from a type T is the construction of a derived declarator type from T by the application of an array-type, a function-type, or a pointer-type derivation to T.
+  - 貌似三個不相關的術語「陣列」、「函式」，及「指標」都歸類為 derived declarator types。
+- Pointers vs. Arrays
+  - In declaration
+    - 不能變更為 pointer 的形式
+      1. extern, 如 extern char x[];
+      2. definition/statement, 如 char x[10]
+    - 可變更為 pointer 的形式
+      1. func(char *x)
+  - In expression
+    - pointer 與 array 可互換
+## Exercise
+- 設定絕對地址為 0x67a9 的 32-bit 整數變數的值為 0xaa6，該如何寫？
+    ```
+    *(int32_t * const) (0x67a9) = 0xaa6; 
+    ```
+    要先把 0x67a9 轉型成指標，再用 *取值 做更改
