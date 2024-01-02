@@ -41,9 +41,10 @@
       1. func(char *x)
   - In expression
     - pointer 與 array 可互換
+- 1D Array 的 []， 例如 x[i]，[] 是一種語法糖 (syntax sugar)，比較好寫，編譯時將被編譯器改寫為 *(x + i) 。2D array 的 [][] 也是語法糖，C 最後仍然透過轉換轉成 1D 的位址做操作(透過指標的方法做降維)。
 ## Exercise
 - 設定絕對地址為 0x67a9 的 32-bit 整數變數的值為 0xaa6，該如何寫？
     ```
     *(int32_t * const) (0x67a9) = 0xaa6; 
     ```
-    要先把 0x67a9 轉型成指標，再用 *取值 做更改
+    要先把 0x67a9 轉型成指標，再用 *取值 做更改。
