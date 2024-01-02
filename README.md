@@ -38,7 +38,9 @@
 - 為何 C 語言標準函式庫裡頭的函式名稱如此簡短？
   - Translation limits 6 significant initial characters in an external identifier. (最初連結器有 6 到 8 個字元的輸入限制。)
 - 在 C 語言的物件就指在執行時期，資料儲存的區域，可以明確表示數值的內容。
-- 沒有「雙指標」只有「指標的指標」。
+- 沒有「雙指標」只有「指標的指標」，在中文裡，兩者個意思完全迥異。
+  - 雙 : 有「對稱」且「獨立」的意含，
+  - x的x : 由單一個體關聯到另一個體的對應。
 - C 語言中，萬物皆是數值 (everything is a value)，函式呼叫當然只有 call-by-value。「指標的指標」(英文就是 a pointer of a pointer) 是個常見用來改變「傳入變數原始數值」的技巧。
 - Array, function, and pointer types are collectively called derived declarator types. A declarator type derivation from a type T is the construction of a derived declarator type from T by the application of an array-type, a function-type, or a pointer-type derivation to T.
   - 貌似三個不相關的術語「陣列」、「函式」，及「指標」都歸類為 derived declarator types。
@@ -56,6 +58,14 @@
   - 如果是用在 expression，array 永遠會被轉成一個 pointer。
   - 用在 function argument 以外的 declaration 中它還是一個 array，而且「不能」被改寫成 pointer。
   - function argument 中的 array 會被轉成 pointer。
+- 在 C17 中，NULL 的定義通常是標準頭文件 stddef.h 中的 #define NULL ((void *)0)。這表示在 C17 中，NULL 被定義為一個空指標（void 指標），其值是 0。
+    ```
+    #ifndef __cplusplus
+    #define NULL ((void *)0)
+    #else
+    #define NULL 0
+    #endif
+    ```
 
 
 ## Exercise
