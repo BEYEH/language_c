@@ -1,5 +1,12 @@
 # Learn C
 
+## Tools
+- gcc : 13.1.0
+- C version : C17 (201710)
+- OS : Windows 11
+- IDE : VSCode
+- Terminal : PowerShell 7.4.0
+
 
 ## Resource
 - 「你所不知道的 C 語言」系列講座 —— jserv
@@ -66,6 +73,10 @@
     #define NULL 0
     #endif
     ```
+- 在 C 語言中，"function" 隱含一個狀態到另一個狀態的關聯，而並非數學意義上的函數，因此我們將一般的 C function 翻譯為「函式」。
+- Parameter vs. Argument
+  - Parameter (formal parameter) : 在函式宣告 (declaration) 與定義 (definition) 時。
+  - Argument (actual argument) : 呼叫函式時。
 
 
 ## Exercise
