@@ -43,3 +43,15 @@
 ## Resource
 
 - [「你所不知道的 C 語言」系列講座 —— jserv](https://hackmd.io/@sysprog/c-programmin)
+
+- [Tutorialspoint](https://www.tutorialspoint.com/)
+  - [C Tutorial](https://www.tutorialspoint.com/cprogramming/index.htm)
+  - [C Standard Library Reference Tutorial](https://www.tutorialspoint.com/c_standard_library/index.htm)
+  - [Learn C by Examples](https://www.tutorialspoint.com/learn_c_by_examples/index.htm)
+
+- [W3Schools](https://www.w3schools.com/)
+  - [C Tutorial](https://www.w3schools.com/c/index.php)
+
+- Online Editor & Compiler
+  - [C Online Compiler - OneCompiler](https://onecompiler.com/c)
+  - [Online C Compiler - Programiz](https://www.programiz.com/c-programming/online-compiler/)
