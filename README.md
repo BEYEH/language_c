@@ -20,6 +20,14 @@
 - OS : Windows, Ubuntu
 - IDE : VSCode
 - Terminal : PowerShell
+- MinGW (Minimalist GNU for Windows)
+  - core: GCC
+  - support languages: C, C++, Fortran
+  - include tools: GDB, text processing utils (sed、awk)
+- LLVM (Low-Level Virtual Machine)
+  - core: frontend (clang), backend, optimizer
+  - support languages: C, C++, Objective-C
+  - include tools: LLVM compiler (clang), LLVM assembler (llvm-as), LLVM linker (llvm-link)
 
 ## Tips
 
