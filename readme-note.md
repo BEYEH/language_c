@@ -4,12 +4,28 @@
 <!-- omit in toc -->
 ## Table of contents
 
+- [Type of Variables](#type-of-variables)
 - [Memory Address](#memory-address)
 - [Pointer](#pointer)
 - [Array](#array)
 - [Function](#function)
 - [Object](#object)
 - [Standard Library](#standard-library)
+
+## Type of Variables
+
+- Basic Data Types
+  - int (2 or 4 bytes)
+    - %d
+  - float (4 bytes)
+    - %f
+  - double (8 bytes)
+    - %lf
+  - char (1 byte)
+    - %c
+- Other
+  - string
+    - %s
 
 ## Memory Address
 
