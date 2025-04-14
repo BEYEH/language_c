@@ -34,6 +34,13 @@
 - Other
   - string
     - %s
+- Type Conversion
+  - Implicit Conversion
+    - It is done automatically by the compiler when you assign a value of one type to another.
+    - Might occur unexpected results.
+  - Explicit Conversion
+    - It is done manually by placing the type in parentheses () in front of the value.
+    - 
 
 ## ASCII
 
