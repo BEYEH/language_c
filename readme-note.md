@@ -40,7 +40,6 @@
     - Might occur unexpected results.
   - Explicit Conversion
     - It is done manually by placing the type in parentheses () in front of the value.
-    - 
 
 ## ASCII
 
