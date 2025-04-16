@@ -158,6 +158,10 @@
   #endif
   ```
 
+- C Booleans
+  - #include <stdbool.h>
+    - `true`, `false` return as `1`, `0`
+
 ## Resources
 
 - [ASCII Table Reference](https://www.w3schools.com/charsets/ref_html_ascii.asp)
