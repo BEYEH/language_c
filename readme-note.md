@@ -9,6 +9,7 @@
 - [Memory Address](#memory-address)
 - [Pointer](#pointer)
 - [Array](#array)
+- [Conditional Expression](#conditional-expression)
 - [Function](#function)
 - [Object](#object)
 - [Standard Library](#standard-library)
@@ -109,6 +110,43 @@
   - 如果是用在 expression，array 永遠會被轉成一個 pointer。
   - 用在 function argument 以外的 declaration 中它還是一個 array，而且「不能」被改寫成 pointer。
   - function argument 中的 array 會被轉成 pointer。
+
+## Conditional Expression
+
+- If Else
+  - Short hand if else (Ternary Operator)
+
+    ```c
+    // variable = (condition) ? expressionTrue : expressionFalse;
+    int time = 20;
+    (time < 18) ? printf("Good day.") : printf("Good evening."); 
+    ```
+
+- Switch
+- While Loop
+- Do While Loop
+- For Loop
+- Break and Continue
+- Infinite Loop
+
+  ```c
+  while(1){
+    ...
+  }
+  ```
+
+  ```c
+  do
+  {
+    ...
+  } while(1)
+  ```
+
+  ```c
+  for(;;){
+    ...
+  }
+  ```
 
 ## Function
 
