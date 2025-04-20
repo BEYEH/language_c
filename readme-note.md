@@ -4,7 +4,7 @@
 <!-- omit in toc -->
 ## Table of contents
 
-- [Type of Variables](#type-of-variables)
+- [Data Types](#data-types)
 - [ASCII](#ascii)
 - [Memory Address](#memory-address)
 - [Pointer](#pointer)
@@ -15,36 +15,46 @@
 - [Standard Library](#standard-library)
 - [Resources](#resources)
 
-## Type of Variables
+## Data Types
 
-- Basic Data Types
-  - int (2 or 4 bytes)
-    - %d
-  - float (4 bytes)
-    - %f
-  - double (8 bytes)
-    - %lf
-  - char (1 byte)
-    - %c
-    - ASCII (0~127)
-      - NULL: 0
-      - LF (line feed): 10, '\n', 前往下一行
-      - CR (carriage return): 13, '\r', 回到起始點
-      - space: 32
-      - DEL (delete): 127
-- Other
-  - string
-    - %s
-- Type Conversion
-  - Implicit Conversion
-    - It is done automatically by the compiler when you assign a value of one type to another.
-    - Might occur unexpected results.
-  - Explicit Conversion
-    - It is done manually by placing the type in parentheses () in front of the value.
+- Primitive Data Types (基本資料型別)
+
+  | Data Types | 32-bits CPU | 64-bits CPU | Format Specifier | Note          |
+  | :--------: | :---------: | :---------: | :--------------: | :------------ |
+  |            | Size(bytes) | Size(bytes) |                  |               |
+  |    char    |      1      |      1      |        %c        | ASCII (0~127) |
+  |   short    |      2      |      2      |        %d        |               |
+  |    int     |      4      |      4      |        %d        |               |
+  |   float    |      4      |      4      |        %f        |               |
+  |    long    |      4      |      8      |       %ld        |               |
+  |   double   |      8      |      8      |       %lf        |               |
+
+  - Type Conversion
+    - Implicit Conversion
+      - It is done automatically by the compiler when you assign a value of one type to another.
+      - Might occur unexpected results.
+    - Explicit Conversion
+      - It is done manually by placing the type in parentheses () in front of the value.
+
+- Derived Data Types (衍生資料型別)
+  - Array
+  - Pointer
+  - Structure
+  - Union
+  - Function
+
+- User-defined Types (使用者自定義資料型別)
+  - typedef
+  - enum
 
 ## ASCII
 
 - ASCII 有 7 個 bits ，包含 128 個字元
+  - NULL: 0
+  - LF (line feed): 10, '\n', 前往下一行
+  - CR (carriage return): 13, '\r', 回到起始點
+  - space: 32
+  - DEL (delete): 127
 - 換行字元 CR LF
 
   - 打字機正確的換行指令

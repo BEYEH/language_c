@@ -76,3 +76,9 @@
 - Online Editor & Compiler
   - [C Online Compiler - OneCompiler](https://onecompiler.com/c)
   - [Online C Compiler - Programiz](https://www.programiz.com/c-programming/online-compiler/)
+
+- Interview
+  - [C語言測試 應知道的0x10個基本問題,  creteken](https://creteken.pixnet.net/blog/post/24524138)
+  - [C/C++ - 常見 C 語言觀念題目總整理,  Mr. Opengate](https://www.mropengate.com/2017/08/cc-c.html)
+  - [C/C++ 常見試題,  Yu-Pu Wu](https://medium.com/@earth875/c-c-%E5%B8%B8%E8%A6%8B%E8%A9%A6%E9%A1%8C-961619b14f88)
+  - [面試整理,  陳家錡](https://hackmd.io/@g9tdU4gDSTiEZrerd0g7-w/SyCXEfsSE)
